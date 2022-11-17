@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner ENTER = new Scanner(System.in);
+
+        int[] number = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int n : number) {
+            if (n >= 90) {
+                System.out.println(n + " has grade A ");
+            } else if (n >= 80 && n < 90) {
+                System.out.println(n + " has grad B");
+
+            } else if (n >= 70 && n < 80) {
+                System.out.println(n + " has grade C");
+
+            } else if (n >= 60 && n < 70) {
+                System.out.println(n + " has grade D");
+
+            } else {
+                System.out.println(n + " has grade F ");
+            }
+
+        }
+
+        String[] names = {"Shaza", "Mohamed", "Asmaa", "Anfal", "Yousra", "Amin", "Radwa", "Yasmeen"};
+        for (String m : names) {
+            if (m.startsWith("A")) {
+                System.out.println(m);
+
+            }
+
+        }
+        int[] akbar = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int r : akbar) {
+            if (r < 50) {
+                continue;
+            }
+            System.out.println(r);
+        }
+        int[] CHEAK = {1, 2, 10, 13, 14, 15, 66, 3};
+        int i =0;
+        System.out.println("PLEASE ENTER THE NUMBER TO CKEAK : ");
+        int cheak = ENTER.nextInt();
+        for (int s : CHEAK) {
+
+            if (s == cheak) {
+                System.out.println("THE ARRAY has  THE ELEMNT");
+            }
+            else {
+                i++;
+
+            }
+        }
+        if (i == CHEAK.length){
+            System.out.println("THE ARRAY has not  THE ELEMNT");
+        }
+
+
+        }
+    }
+
